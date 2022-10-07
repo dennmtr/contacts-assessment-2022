@@ -1,5 +1,5 @@
 import React from 'react'
-import { ReactComponent as Img } from 'src/assets/images/icon-supervisor.svg'
+import magnifier from 'src/assets/images/icon-supervisor.png'
 import IconContainer from 'src/components-domain/Icons/IconContainer.styled'
 import Button, { IButton } from 'src/components/Button/Button.styled'
 
@@ -11,7 +11,7 @@ const MagniIcon = React.forwardRef<HTMLButtonElement, IMagniIcon>(({ onClick, ml
   return (
     <IconContainer>
       <Button ref={ref} onClick={onClick} title="Inspect" mlAuto={mlAuto}>
-        <Img viewBox="0 0 65 65" width={55} />
+        <img src={magnifier} alt="Inspect" width={45} />
       </Button>
     </IconContainer>
   )
